@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/rocket.png" type="image/png">
     <style>
+        html, body {
+            height: 100%; /* ensures body and html elements take up full viewport height */
+            padding: 0; /* set padding to 0 for both elements */
+            margin: 0; /* remove any default margin */
+            font-family: Courier, monospace;
+            background: url('images/background.jpg') no-repeat center center fixed; 
+            background-size: cover;
+        }
         body {
             padding: 75px;
-            font-family: Courier, monospace; 
-            background: url('images/background.jpg'); /* change this to your preferred background image */
-            background-size: cover; /* added this line: scales the image as large as possible without stretching or squishing it */
-            background-repeat: no-repeat; /* added this line: prevents the image from repeating */
-            background-position: center; /* added this line: centers the image in the viewport */
         }
         @media (max-width: 600px) {
            body {
-              padding: 0; /* changed from 20px to 0 */
+              padding: 20px;
            }
         }
         .link-icon {
@@ -30,32 +33,32 @@
         }
         .profile-section, .contact-icons, .intro-text {
             margin-bottom: 30px;
-            text-align: center; /* added this line */
+            text-align: center;
         }
         .profile-pic {
-            width: 80px; /* or however large you want the image */
-            height: auto; /* maintains aspect ratio */
-            margin-bottom: 30px; /* added this line */
-            display: block; /* centers the image */
+            width: 80px;
+            height: auto;
+            margin-bottom: 30px;
+            display: block;
             margin: 0 auto;
         }
         .content-container {
-            background: #FFFFFF; /* white background for content container */
-            padding: 30px; /* padding around content */
-            display: block; /* changed this line */
-            width: 50%; /* added this line */
-            margin: 0 auto; /* added this line */
+            background: #FFFFFF;
+            padding: 30px;
+            display: block;
+            width: 50%;
+            margin: 0 auto;
         }
         @media (max-width: 600px) {
             .content-container {
-                width: 100%; /* changed from 90% to 100% */
-                box-sizing: border-box; /* added this line: includes padding and border in element's total width and height */
+                width: 90%;
+                box-sizing: border-box;
             }
         }
     </style>
 </head>
 <body>
-    <div class="content-container"> <!-- added this line -->
+    <div class="content-container">
         <div class="profile-section">
             <img src="images/astronaut.png" alt="Apollo Lee" class="profile-pic">
             <h1>Apollo Lee</h1>
@@ -69,6 +72,6 @@
             </a>
         </div>
         <p class="intro-text">Hi! I'm a student at Stanford studying electrical engineering.</p>
-    </div> <!-- added this line -->
+    </div>
 </body>
 </html>
