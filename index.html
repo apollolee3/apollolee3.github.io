@@ -15,7 +15,7 @@
         }
         @media (max-width: 600px) {
            body {
-              padding: 20px;
+              padding: 0; /* changed from 20px to 0 */
            }
         }
         .link-icon {
@@ -48,7 +48,8 @@
         }
         @media (max-width: 600px) {
             .content-container {
-                width: 90%; /* change width for smaller screens */
+                width: 100%; /* changed from 90% to 100% */
+                box-sizing: border-box; /* added this line: includes padding and border in element's total width and height */
             }
         }
     </style>
