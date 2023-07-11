@@ -19,23 +19,34 @@
             height: 20px;
             width: 20px;
             margin-right: 12px;
+            display: inline-block;
+            margin: 0 auto;
         }
         a {
             text-decoration: none;
-            display: inline-block; /* added this line */
         }
         .profile-section, .contact-icons, .intro-text {
             margin-bottom: 30px;
+            text-align: center; /* added this line */
         }
         .profile-pic {
             width: 80px; /* or however large you want the image */
             height: auto; /* maintains aspect ratio */
             margin-bottom: 30px; /* added this line */
             display: block; /* centers the image */
+            margin: 0 auto;
         }
         .content-container {
             background: #FFFFFF; /* white background for content container */
             padding: 30px; /* padding around content */
+            display: block; /* changed this line */
+            width: 50%; /* added this line */
+            margin: 0 auto; /* added this line */
+        }
+        @media (max-width: 600px) {
+            .content-container {
+                width: 90%; /* change width for smaller screens */
+            }
         }
     </style>
 </head>
