@@ -8,7 +8,10 @@
         body {
             padding: 75px;
             font-family: Courier, monospace; 
-            background: #A4A4A4; /* change this to your preferred background color */
+            background: url('images/background.jpg'); /* change this to your preferred background image */
+            background-size: cover; /* added this line: scales the image as large as possible without stretching or squishing it */
+            background-repeat: no-repeat; /* added this line: prevents the image from repeating */
+            background-position: center; /* added this line: centers the image in the viewport */
         }
         @media (max-width: 600px) {
            body {
@@ -64,7 +67,7 @@
                 <img class="link-icon" src="images/linkedin.png" alt="LinkedIn">
             </a>
         </div>
-        <p class="intro-text">Hi! I'm a student at Stanford University studying electrical engineering.</p>
+        <p class="intro-text">Hi! I'm a student at Stanford studying electrical engineering.</p>
     </div> <!-- added this line -->
 </body>
 </html>
