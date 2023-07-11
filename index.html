@@ -27,9 +27,16 @@
         h1, .contact-icons, .intro-text {
             margin-bottom: 30px;
         }
+        .profile-pic {
+            width: 100px; /* or however large you want the image */
+            height: auto; /* maintains aspect ratio */
+            display: block; /* centers the image */
+            margin: 0 auto 30px auto; /* centers the image and adds 30px bottom margin */
+        }
     </style>
 </head>
 <body>
+    <img src="images/astronaut.png" alt="Apollo Lee" class="profile-pic"> <!-- added this line -->
     <h1>Apollo Lee</h1>
     <div class="contact-icons">
         <a href="mailto:apollo1@stanford.edu">
