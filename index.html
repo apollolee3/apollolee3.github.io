@@ -8,7 +8,7 @@
         body {
             padding: 75px;
             font-family: Courier, monospace; 
-            background: #FFFFFF; /* change this to suit your needs */
+            background: #A4A4A4; /* change this to your preferred background color */
         }
         @media (max-width: 600px) {
            body {
@@ -33,21 +33,27 @@
             margin-bottom: 30px; /* added this line */
             display: block; /* centers the image */
         }
+        .content-container {
+            background: #FFFFFF; /* white background for content container */
+            padding: 30px; /* padding around content */
+        }
     </style>
 </head>
 <body>
-    <div class="profile-section">
-        <img src="images/astronaut.png" alt="Apollo Lee" class="profile-pic">
-        <h1>Apollo Lee</h1>
-    </div>
-    <div class="contact-icons">
-        <a href="mailto:apollo1@stanford.edu">
-            <img class="link-icon" src="images/email.png" alt="Email">
-        </a>
-        <a href="https://www.linkedin.com/in/apollo-lee/" target="_blank">
-            <img class="link-icon" src="images/linkedin.png" alt="LinkedIn">
-        </a>
-    </div>
-    <p class="intro-text">Hi! I'm a student at Stanford University studying electrical engineering.</p>
+    <div class="content-container"> <!-- added this line -->
+        <div class="profile-section">
+            <img src="images/astronaut.png" alt="Apollo Lee" class="profile-pic">
+            <h1>Apollo Lee</h1>
+        </div>
+        <div class="contact-icons">
+            <a href="mailto:apollo1@stanford.edu">
+                <img class="link-icon" src="images/email.png" alt="Email">
+            </a>
+            <a href="https://www.linkedin.com/in/apollo-lee/" target="_blank">
+                <img class="link-icon" src="images/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+        <p class="intro-text">Hi! I'm a student at Stanford University studying electrical engineering.</p>
+    </div> <!-- added this line -->
 </body>
 </html>
