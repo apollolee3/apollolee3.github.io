@@ -24,20 +24,25 @@
             text-decoration: none;
             display: inline-block; /* added this line */
         }
-        h1, .contact-icons, .intro-text {
+        .profile-section, .contact-icons, .intro-text {
             margin-bottom: 30px;
         }
         .profile-pic {
             width: 100px; /* or however large you want the image */
             height: auto; /* maintains aspect ratio */
-            display: block; /* centers the image */
-            margin: 0 auto 30px auto; /* centers the image and adds 30px bottom margin */
+            margin-right: 30px; /* added this line */
+        }
+        .profile-section {
+            display: flex; /* added this line */
+            align-items: start; /* added this line */
         }
     </style>
 </head>
 <body>
-    <img src="images/astronaut.png" alt="Apollo Lee" class="profile-pic"> <!-- added this line -->
-    <h1>Apollo Lee</h1>
+    <div class="profile-section">
+        <img src="images/astronaut.png" alt="Apollo Lee" class="profile-pic">
+        <h1>Apollo Lee</h1>
+    </div>
     <div class="contact-icons">
         <a href="mailto:apollo1@stanford.edu">
             <img class="link-icon" src="images/email.png" alt="Email">
